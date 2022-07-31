@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const Layout(
+    return Layout(
       child: MaterialApp(
         title: StringConst.APP_TITLE,
-        //theme: AppTheme.lightThemeData,
+        theme: ThemeData.light(),
         debugShowCheckedModeBanner: false,
         initialRoute: HomePage.homePageRoute,
         onGenerateRoute: RouteConfiguration.onGenerateRoute,
